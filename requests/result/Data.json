@@ -1,0 +1,62 @@
+[
+  {
+    "position": 1,
+    "name": "Splash Financial",
+    "rates": "1.99% - 7.10%"
+  },
+  {
+    "position": 2,
+    "name": "Laurel Road",
+    "rates": "1.99% - 6.65%"
+  },
+  {
+    "position": 3,
+    "name": "SoFi",
+    "rates": "1.99% - 6.24%<sup>1</sup>"
+  },
+  {
+    "position": 4,
+    "name": "Education Loan Finance",
+    "rates": "2.39% - 6.01%(subject to a 9.95% rate cap)"
+  },
+  {
+    "position": 5,
+    "name": "Earnest",
+    "rates": "1.99% - 5.64%"
+  },
+  {
+    "position": 6,
+    "name": "CommonBond",
+    "rates": "3.18% - 6.06%"
+  },
+  {
+    "position": 7,
+    "name": "Citizens Bank",
+    "rates": "2.49% - 8.38%<sup>1</sup>"
+  },
+  {
+    "position": 8,
+    "name": "LendKey",
+    "rates": "2.61% - 5.25%"
+  },
+  {
+    "position": 9,
+    "name": "College Ave",
+    "rates": "3.64% - 8.99%<sup>2</sup>"
+  },
+  {
+    "position": 10,
+    "name": "First Republic",
+    "rates": false
+  },
+  {
+    "position": 11,
+    "name": "EDvestinU",
+    "rates": "3.86% - 6.53%"
+  },
+  {
+    "position": 12,
+    "name": "PenFed",
+    "rates": "2.18% - 5.54%"
+  }
+]

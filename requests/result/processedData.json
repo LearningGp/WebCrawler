@@ -1,0 +1,86 @@
+[
+  {
+    "position": 1,
+    "name": "Splash Financial",
+    "rates": "1.99% - 7.27%",
+    "rates_fixed": "2.88% - 7.27%",
+    "rates_variable": "1.99% - 7.10%"
+  },
+  {
+    "position": 2,
+    "name": "Laurel Road",
+    "rates": "1.99% - 7.02%",
+    "rates_fixed": "3.20% - 7.02%",
+    "rates_variable": "1.99% - 6.65%"
+  },
+  {
+    "position": 3,
+    "name": "SoFi",
+    "rates": "1.99% - 6.24%",
+    "rates_fixed": "2.99% - 6.24%",
+    "rates_variable": "1.99% - 6.24%<sup>1</sup>"
+  },
+  {
+    "position": 4,
+    "name": "Education Loan Finance",
+    "rates": "2.39% - 6.01%",
+    "rates_fixed": "3.19% - 5.99%",
+    "rates_variable": "2.39% - 6.01%(subject to a 9.95% rate cap)"
+  },
+  {
+    "position": 5,
+    "name": "Earnest",
+    "rates": "1.99% - 5.79%",
+    "rates_fixed": "2.98% - 5.79%",
+    "rates_variable": "1.99% - 5.64%"
+  },
+  {
+    "position": 6,
+    "name": "CommonBond",
+    "rates": "3.18% - 6.06%",
+    "rates_fixed": "3.19% - 5.99%",
+    "rates_variable": "3.18% - 6.06%"
+  },
+  {
+    "position": 7,
+    "name": "Citizens Bank",
+    "rates": "2.49% - 8.63%",
+    "rates_fixed": "3.20% - 8.63%",
+    "rates_variable": "2.49% - 8.38%<sup>1</sup>"
+  },
+  {
+    "position": 8,
+    "name": "LendKey",
+    "rates": "2.61% - 7.75%",
+    "rates_fixed": "3.19% - 7.75%",
+    "rates_variable": "2.61% - 5.25%"
+  },
+  {
+    "position": 9,
+    "name": "College Ave",
+    "rates": "3.64% - 8.99%",
+    "rates_fixed": "3.74% - 8.99%<sup>2</sup>",
+    "rates_variable": "3.64% - 8.99%<sup>2</sup>"
+  },
+  {
+    "position": 10,
+    "name": "First Republic",
+    "rates": "1.95% - 4.45%",
+    "rates_fixed": "1.95% - 4.45%<sup>*</sup>",
+    "rates_variable": false
+  },
+  {
+    "position": 11,
+    "name": "EDvestinU",
+    "rates": "3.86% - 7.20%",
+    "rates_fixed": "4.53% - 7.20%",
+    "rates_variable": "3.86% - 6.53%"
+  },
+  {
+    "position": 12,
+    "name": "PenFed",
+    "rates": "2.18% - 5.54%",
+    "rates_fixed": "3.23% - 5.53%",
+    "rates_variable": "2.18% - 5.54%"
+  }
+]

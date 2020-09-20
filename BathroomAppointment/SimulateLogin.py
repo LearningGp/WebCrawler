@@ -8,9 +8,13 @@ from selenium import webdriver
 from time import sleep
 import json
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
 import requests as rq
 if __name__ == '__main__':
-    bro = webdriver.Chrome(executable_path='./selenium/chromedriver.exe')
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-gup')
+    bro = webdriver.Chrome(executable_path='./selenium/chromedriver.exe', chrome_options=chrome_options)
     bro.get('http://authserver.nju.edu.cn/authserver/login?service=http%3A%2F%2Fehall.nju.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.nju.edu.cn%2Fywtb-portal%2Fofficial%2Findex.html%23%2F')
     userName = bro.find_element_by_id('username')
     passWord = bro.find_element_by_id('password')
@@ -44,8 +48,8 @@ if __name__ == '__main__':
                   "DEPT_NAME": "软件学院",
                   "PHONE_NUMBER": None,
                   "PALCE_ID": "f881e8c2aa6f4190bc3efa13408143af",
-                  "BEGINNING_DATE": "2020-09-18 20:00",
-                  "ENDING_DATE": "2020-09-18 20:20",
+                  "BEGINNING_DATE": "2020-09-20 19:20",
+                  "ENDING_DATE": "2020-09-20 19:40",
                   "SCHOOL_DISTRICT_CODE": "02",
                   "SCHOOL_DISTRICT": "鼓楼校区",
                   "LOCATION": "鼓楼男浴室",
@@ -58,3 +62,11 @@ if __name__ == '__main__':
     url = 'http://ehallapp.nju.edu.cn/qljfwapp/sys/lwAppointmentBathroom/api/appointmentSave.do?'
     response = rq.post(url=url, data=param, headers=headers, cookies=cookies).text
     print(response)
+
+    # 规避检测
+    # from selenium.webdriver import Chrome
+    # from selenium.webdriver import ChromeOptions
+    #
+    # option = ChromeOptions()
+    # option.add_experimental_option('excludeSwitches', ['enable-automation'])
+    # driver = Chrome(options=option)

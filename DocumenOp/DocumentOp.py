@@ -19,6 +19,7 @@ if __name__ == '__main__':
     locations = []
     times = []
     dates = []
+    salaries = []
     for file in files:
         try:
             print(file)
@@ -52,6 +53,19 @@ if __name__ == '__main__':
                 print(date.group(0))
             except:
                 dates.append(0)
+            try:
+                salay_t = re.search('\d+.\d+', file_doc.tables[2].rows[0].cells[0].text)
+                salay_i = salay_t.group(0).split('-')
+                if len(salay_i)==1:
+                    salaries.append((int)(salay_i[0]))
+                    print(salay_i[0])
+                else:
+                    salay =  ((int)(salay_i[0]) + ((int)(salay_i[1])))/2
+                    print(salay)
+                    salaries.append(salay)
+            except:
+                salaries.append(0)
+                print(0)
         except:
             print(file, 'error')
     word.Quit()
@@ -62,4 +76,6 @@ if __name__ == '__main__':
         sh1.write(num, 1, locations[num])
         sh1.write(num, 2, times[num])
         sh1.write(num, 3, dates[num])
-    wb.save('test_w.xls')
+        sh1.write(num, 4, salaries[num])
+        print(num)
+    wb.save('test_w_2.xls')

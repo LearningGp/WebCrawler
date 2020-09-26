@@ -1,11 +1,13 @@
 import scrapy
 
+from scrapy01.items import Scrapy01Item
+
 
 class FirstSpider(scrapy.Spider):
     name = 'first'
-    #允许的域名：限定url列表中哪些允许访问
-    # allowed_domains = ['www.baidu.com']
-    #起始的url列表
+    #  允许的域名：限定url列表中哪些允许访问
+    #  allowed_domains = ['www.baidu.com']
+    #  起始的url列表
     start_urls = ['https://www.qiushibaike.com/text/']
 
     def parse(self, response):
@@ -17,5 +19,10 @@ class FirstSpider(scrapy.Spider):
             author = div.xpath('./div[1]/a[2]/h2/text()')[0].extract()
             content = div.xpath('./a[1]/div/span//text()').extract()
             content = ''.join(content)
-            print(author)
-            print(content)
+
+            item = Scrapy01Item()
+            item['author'] = author
+            item['content'] = content
+
+            #  提交管道
+            yield item

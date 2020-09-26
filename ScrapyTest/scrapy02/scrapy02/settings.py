@@ -1,4 +1,4 @@
-# Scrapy settings for scrapy01 project
+# Scrapy settings for scrapy02 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy01'
+BOT_NAME = 'scrapy02'
 
-SPIDER_MODULES = ['scrapy01.spiders']
-NEWSPIDER_MODULE = 'scrapy01.spiders'
+SPIDER_MODULES = ['scrapy02.spiders']
+NEWSPIDER_MODULE = 'scrapy02.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -48,13 +48,13 @@ LOG_LEVEL = 'ERROR'
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy01.middlewares.Scrapy01SpiderMiddleware': 543,
+#    'scrapy02.middlewares.Scrapy02SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy01.middlewares.Scrapy01DownloaderMiddleware': 543,
+#    'scrapy02.middlewares.Scrapy02DownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,10 +65,9 @@ LOG_LEVEL = 'ERROR'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'scrapy01.pipelines.Scrapy01Pipeline': 300,
-    #  300表示优先级，数值最小优先级越高
-}
+#ITEM_PIPELINES = {
+#    'scrapy02.pipelines.Scrapy02Pipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -6,9 +6,8 @@
 import scrapy
 
 
-class Scrapy02Item(scrapy.Item):
+class Scrapy03Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     # pass
-    job_name = scrapy.Field()
-    job_desc = scrapy.Field()
+    src = scrapy.Field()

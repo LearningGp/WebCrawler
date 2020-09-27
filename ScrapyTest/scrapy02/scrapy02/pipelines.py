@@ -10,4 +10,5 @@ from itemadapter import ItemAdapter
 
 class Scrapy02Pipeline:
     def process_item(self, item, spider):
+        print(item)
         return item

@@ -15,8 +15,11 @@ if __name__ == '__main__':
     myUsername = 'MF20320057'
     myPassword = '3016XmHjh4127'
     myName = '何家欢'
-    beginTime = '2020-09-26 19:40'
-    endTime = '2020-09-26 20:00'
+    # myUsername = 'MF20320053'
+    # myPassword = 'gzhanuo@86'
+    # myName = '郭展'
+    beginTime = '2020-09-30 20:40'
+    endTime = '2020-09-30 21:00'
     chrome_options = Options()
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-gup')
